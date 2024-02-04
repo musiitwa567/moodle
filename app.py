@@ -14,7 +14,7 @@ from langchain.llms import HuggingFaceHub
 
 load_dotenv()
 
-os.environ['HUGGINGFACE_API_TOKEN'] = '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'
+os.environ['HUGGINGFACE_API_TOKEN'] = ''
 #load the pdf files from the path
 loader = DirectoryLoader('data/',glob="*.pdf",loader_cls=PyPDFLoader)
 documents = loader.load()
